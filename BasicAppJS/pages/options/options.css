@@ -1,0 +1,27 @@
+﻿body {
+    color:#000;
+}
+.settings_pane {
+    margin-top:36px;
+    margin-left:48px;
+}
+.settings_title {
+    margin-left:36px;
+}
+.settings_content {
+    margin-left:24px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .options section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .options section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

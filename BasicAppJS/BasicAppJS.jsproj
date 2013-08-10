@@ -47,9 +47,7 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    
     <PackageCertificateKeyFile>BasicAppJS_TemporaryKey.pfx</PackageCertificateKeyFile>
-    
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -63,6 +61,9 @@
     <Content Include="js\data.js" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
+    <Content Include="pages\about\about.css" />
+    <Content Include="pages\about\about.html" />
+    <Content Include="pages\about\about.js" />
     <Content Include="pages\itemDetail\itemDetail.css" />
     <Content Include="pages\itemDetail\itemDetail.html" />
     <Content Include="pages\itemDetail\itemDetail.js" />
@@ -73,12 +74,17 @@
     <Content Include="pages\groupedItems\groupedItems.html" />
     <Content Include="pages\groupedItems\groupedItems.js" />
     <Content Include="default.html" />
-    
+    <Content Include="pages\options\options.css" />
+    <Content Include="pages\options\options.html" />
+    <Content Include="pages\options\options.js" />
     <None Include="BasicAppJS_TemporaryKey.pfx" />
-    
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+    <SDKReference Include="MSAdvertisingJS, Version=6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="strings\ko-KR\resources.resjson" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

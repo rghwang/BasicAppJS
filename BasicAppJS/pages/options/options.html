@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>options</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="options.css" rel="stylesheet" />
+    <script src="options.js"></script>
+</head>
+<body>
+    <div id="options" data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{width: 'narrow'}">
+        <div class="settings_pane">
+            <div class="win-label">
+                <button onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton">
+                </button>
+                <span class="settings_title" data-win-res="{textContent: 'Options'}"></span>
+            </div>
+            <article class="settings_content">
+            </article>
+        </div>
+    </div>
+</body>
+</html>
